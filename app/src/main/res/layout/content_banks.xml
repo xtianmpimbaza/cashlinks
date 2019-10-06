@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".BanksActivity"
+    tools:showIn="@layout/activity_banks">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:outlineAmbientShadowColor="@color/dark_gray"
+            android:outlineSpotShadowColor="@color/black"/>
+
+        <RelativeLayout
+            android:id="@+id/tx_centenary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dip">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon3"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginRight="6dp"
+                app:civ_border_width="0.5dp"
+                app:civ_border_color="#FF000000"
+                android:layout_marginEnd="6dp"
+                android:src="@drawable/centenary_bank" />
+
+            <TextView
+                android:id="@+id/txt_amount3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/icon3"
+                android:layout_toEndOf="@+id/icon3"
+                android:gravity="center_vertical"
+                android:text="Centenary Bank"
+                style="@style/Caption"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_receiver_category3"
+                android:layout_below="@id/txt_amount3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/icon3"
+                android:layout_toEndOf="@+id/icon3"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_marginTop="4dp"
+                android:text="Mapeera Branch"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_below="@id/icon3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/dark_gray"
+                android:layout_toRightOf="@id/icon3"
+                android:layout_toEndOf="@+id/icon3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tx_equity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dip">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginRight="6dp"
+                app:civ_border_width="0.5dp"
+                android:layout_marginEnd="6dp"
+                android:src="@drawable/equity" />
+
+            <TextView
+                android:id="@+id/txt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/icon"
+                android:layout_toEndOf="@+id/icon"
+                android:gravity="center_vertical"
+                android:text="Centenary Bank"
+                style="@style/Caption"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_receiver_category"
+                android:layout_below="@id/txt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/icon"
+                android:layout_toEndOf="@+id/icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_marginTop="4dp"
+                android:text="Mapeera Branch"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_below="@id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/dark_gray"
+                android:layout_toRightOf="@id/icon"
+                android:layout_toEndOf="@+id/icon" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

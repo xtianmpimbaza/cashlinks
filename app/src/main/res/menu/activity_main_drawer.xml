@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_id"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_banks"
+            android:icon="@drawable/ic_bank_24dp"
+            android:title="Banks" />
+        <item
+            android:id="@+id/nav_saccos"
+            android:icon="@drawable/ic_group_sacco_white_24dp"
+            android:title="Saccos" />
+        <item
+            android:id="@+id/nav_individuals"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+            android:title="Individuals" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="History" />
+
+        <item
+            android:id="@+id/nav_profile_id"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Profile" />
+    </group>
+
+    <item android:title="Help">
+        <menu>
+            <item
+                android:id="@+id/nav_share_id"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share" />
+        </menu>
+    </item>
+
+</menu>
